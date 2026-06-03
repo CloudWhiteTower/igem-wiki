@@ -1034,3 +1034,49 @@ footer{
   }
 }
 
+/* Floating top navigation placement */
+:root{
+  --topbar-offset:18px;
+  --topbar-x:clamp(24px,3.8vw,56px);
+}
+.topbar{
+  top:var(--topbar-offset);
+  width:calc(100% - (var(--topbar-x) * 2));
+  max-width:1320px;
+  margin:var(--topbar-offset) auto 0;
+  min-height:78px;
+  padding:0 clamp(22px,3.6vw,54px);
+  border:1px solid rgba(255,255,255,.72);
+  border-bottom:1px solid rgba(255,255,255,.72);
+  border-radius:var(--liquid-radius);
+  background:linear-gradient(120deg,rgba(255,255,255,.78),rgba(255,255,255,.36));
+  box-shadow:0 18px 54px rgba(39,119,138,.16), inset 0 1px 0 rgba(255,255,255,.9);
+  overflow:visible;
+}
+.topbar.liquid-glass{
+  border-radius:var(--liquid-radius);
+}
+.hero{
+  min-height:calc(100vh - 96px);
+}
+.page-hero{
+  margin-top:clamp(42px,5.5vw,78px);
+}
+@media(max-width:980px){
+  :root{
+    --topbar-offset:12px;
+    --topbar-x:16px;
+  }
+  .topbar{
+    width:calc(100% - (var(--topbar-x) * 2));
+    min-height:0;
+    margin:var(--topbar-offset) auto 0;
+    padding:14px 16px;
+    border-radius:var(--liquid-radius);
+    overflow:hidden;
+  }
+  .page-hero{
+    margin-top:38px;
+  }
+}
+
