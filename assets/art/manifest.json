@@ -1,0 +1,418 @@
+﻿[
+    {
+        "file":  "LOGO_01.png",
+        "originalFile":  "001.png",
+        "category":  "LOGO",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MzA4NTkxNzlmMTE1ZTE0OTg4NjFmMGRkYWY2MGFkODNfZDYyN2U5NmE2NmJkYTkxMzBjZWYzYzFkYTM5Y2M4YjJfSUQ6NzY0MjMyNTUyNjE1NzU0NDY1OF8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  59432
+    },
+    {
+        "file":  "LOGO_02.png",
+        "originalFile":  "002.png",
+        "category":  "LOGO",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MjhjMGQxY2IyMTExY2Y4ODVjYzdkN2UwMWEzMTA5YjlfYWY3ZWM0OTk3ODUxYzFlMWFlZWE3ZThmMjVhNzIwNTBfSUQ6NzY0MjMyNTM0NTkwMzI5OTU1NF8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  832315
+    },
+    {
+        "file":  "LOGO深色版_适用于浅色背景_01.png",
+        "originalFile":  "003.PNG",
+        "category":  "LOGO深色版_适用于浅色背景",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZDBlNzZiNDUwYmJlYjhkZmI4ODU3ZjNlMWMxNzg0NTJfZmU4ZTU5Mjg2NGE0MWI3MGEzYzVmNjlkM2E4MjMyYzBfSUQ6NzY0NDg0ODQzODQyNTc2NzEwNV8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  1390825
+    },
+    {
+        "file":  "LOGO深色版_适用于浅色背景_02.png",
+        "originalFile":  "004.PNG",
+        "category":  "LOGO深色版_适用于浅色背景",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NzlmNGVhZGZiMjY5NzIwZDc5ODIyY2VmYTVlNWJkZmRfNWRmZDg0MTQ3ZDhiMGIxMmM4YjhmMzYzZDhkNDdiOGRfSUQ6NzY0NDg0ODQzOTgwNTExOTY4Ml8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  854280
+    },
+    {
+        "file":  "LOGO深色版_适用于浅色背景_03.png",
+        "originalFile":  "005.PNG",
+        "category":  "LOGO深色版_适用于浅色背景",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YzY3OWEwMTNiODMyY2VhZGUxNTE0ZTQ4ZWY2MTcxZTRfNWNkMDE2MTE2Mjc3YWE4NTI3NGZlNTZjYmI4MTc1YTdfSUQ6NzY0NDg0ODQzNzUxOTg0NjYwMV8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  467580
+    },
+    {
+        "file":  "视频开头_01.png",
+        "originalFile":  "006.png",
+        "category":  "视频开头",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NmM0NDBiZjM3MTEyYmY0YWQ4N2JmNGFjOTM0ZGJhM2RfZjQ5NjM4YzI3YWE1Y2ZhYzk1NGE0Yjk2NDRlYTIzZDhfSUQ6NzY0MjMyNTU4NDAwNTU4MjAyOV8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  38146
+    },
+    {
+        "file":  "队服_01.png",
+        "originalFile":  "007.png",
+        "category":  "队服",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTU3OWE2NzUwZjE5MjhkMmU4NWE0ZDU0MDE3Y2U3ZGZfNmJhYTJkYTgxYTJiYmQ2ZDRhZjZlNTIxMjY5NDVhNGRfSUQ6NzY0MzgyNTMxMTY5MTYwNjk4M18xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  1757633
+    },
+    {
+        "file":  "队服_02.png",
+        "originalFile":  "008.PNG",
+        "category":  "队服",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZGZjYTk2NGE2NDNkNGRkOTNkYWVjODYzYWY1NmFlODVfMTAwNmRkMjAyODJkNDc0NjI0NTgxOTRlN2Q4ZDEwODVfSUQ6NzY0MzgyODAxNjEyNDIxODMyNV8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  293828
+    },
+    {
+        "file":  "周边文创_小册子_01.png",
+        "originalFile":  "009.PNG",
+        "category":  "周边文创_小册子",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YTQyNWM1OTljMWRlMzdhNzdiMzgzOWY4YTI0MzFmOWFfMzA0ODdjMTI0MjYzZGY2NDQ0N2ZkOGI5YTllOGJiNDJfSUQ6NzY0MzgyNTUyODYwMDE4NTc5Nl8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  3020989
+    },
+    {
+        "file":  "周边文创_小册子_02.png",
+        "originalFile":  "010.PNG",
+        "category":  "周边文创_小册子",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NTc1YmNkZTQ1NjBmNGNlY2I2ODQ4MmUyZjRmM2NhZjJfN2E2MjY1NDkxMzFkMDA0ZjhhOWE0YTZjNDQzOGNkMGVfSUQ6NzY0MzgyNTYwODM4ODI5OTc0OF8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  2942981
+    },
+    {
+        "file":  "周边文创_小册子_03.png",
+        "originalFile":  "011.PNG",
+        "category":  "周边文创_小册子",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NmY0YTk2ZGVhNmMwZTI3YmY1MTE5MmU0Y2UyMWMwOWJfZDRhNDQ5ZTVhNDc4ZWRmMTczZDZjMWU1NTdlNTk2NGJfSUQ6NzY0MzgyNTk5NjYwNDYyNDA3NF8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  1131240
+    },
+    {
+        "file":  "周边文创_小册子_04.png",
+        "originalFile":  "012.PNG",
+        "category":  "周边文创_小册子",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NGI4OTllNTk5YTc5MDQ2NWRkMzdlNWQ4ZjFkZGFjM2ZfMDU2MTJmNjY1N2RkYjk5ZDliYThkMjlmODU3N2U4ZjdfSUQ6NzY0MzgyNTkxMDIwMTc5NzU5Nl8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  869359
+    },
+    {
+        "file":  "周边文创_种子卡_01.png",
+        "originalFile":  "013.png",
+        "category":  "周边文创_种子卡",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MzJhOTQzZDRiNmEzMWU2YjU1NWI0YWQ4Yzg0MjY3NmNfYjEyNmFkYjI2NTlhNzExMzdlZDZkNjM0MDU2MjMwZTJfSUQ6NzY0MzgyNTcxOTc3MjQ2NjM4NV8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  1482058
+    },
+    {
+        "file":  "周边文创_种子卡_02.png",
+        "originalFile":  "014.png",
+        "category":  "周边文创_种子卡",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTU1MmRlYWRlZDYxMjgyZDRiODY4OWQ0ZTcyNDUzYzBfMjgxNWU0ZThlZGVjNjhhMmYwMjJjMzZhMWYzZjgxNjFfSUQ6NzY0MzgyNTc5MzEzNDY3Njk2Nl8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  990086
+    },
+    {
+        "file":  "周边文创_印章_01.png",
+        "originalFile":  "015.png",
+        "category":  "周边文创_印章",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZmU2MGMwZjEyZWExZDFhNTFmMDcxYjk5YTkxN2Y3NWNfZTcwZmYxMDhiOWQ5ZGQ0NDEzYjdjOTI2MzZjMDZiZTdfSUQ6NzY0MzgyNjE4OTczMTQ5ODk4MF8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  1199725
+    },
+    {
+        "file":  "周边文创_印章_02.png",
+        "originalFile":  "016.PNG",
+        "category":  "周边文创_印章",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MjU2YzkxMjgwZjBkMzNhNWFmYzk5NTMzOGZlNDU4MzVfZjNiNDk3NDUwNjQyOTNhNDliNjUzOTZkYjczNjEwNWFfSUQ6NzY0NDg0OTMzNTY1ODQ4MjkwMF8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  2509752
+    },
+    {
+        "file":  "周边文创_摇摇乐_01.png",
+        "originalFile":  "017.png",
+        "category":  "周边文创_摇摇乐",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NzEzOWY0ZTYyYTJkZTE2YjUxOTlmYmRlNDI0MTk2ODJfYmI0YWI4ZDI1YzZlZTEwZWFkYmEwOTVkMGQyNWEyNThfSUQ6NzY0MzgyNjMxMzE5OTIyNjA3MV8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  538743
+    },
+    {
+        "file":  "周边文创_摇摇乐_02.png",
+        "originalFile":  "018.png",
+        "category":  "周边文创_摇摇乐",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MWQzYzJmOGVlZGIzMjA4YzgwMGVkMzdkZDQ2Njk5MjlfODliYjlhMzVmMjNhYWQyYTZkZmFkOTZhZGFlNDhjMjdfSUQ6NzY0MzgyNjk0ODA5OTI3OTgxNV8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  534234
+    },
+    {
+        "file":  "周边文创_摇摇乐_03.png",
+        "originalFile":  "019.png",
+        "category":  "周边文创_摇摇乐",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NjE1ZjczYjhkNDJiNTM5NTgxODcyMzc3MWJkMmQ3MDFfNjYzNzY3MWUyZTBhZmRlMmRjNzU2ZDQ0OTIwYmU2OTFfSUQ6NzY0MzgyNzA1NDgyNzU4ODU3Ml8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  588482
+    },
+    {
+        "file":  "周边文创_摇摇乐_04.png",
+        "originalFile":  "020.png",
+        "category":  "周边文创_摇摇乐",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTczOGIxMTRmZjE1MjkyMzQ0M2FiZGE5NjA3ZWMxZjVfODQ1MmM4MzZiMzIyNjI0ZjAzYmI0MmQxZTZhNzZkYzFfSUQ6NzY0MzgyNzE0NzA4OTkzOTQxN18xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  454288
+    },
+    {
+        "file":  "周边文创_摇摇乐_05.png",
+        "originalFile":  "021.png",
+        "category":  "周边文创_摇摇乐",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MmI0YTk1NmZmYTk2ZThlYTdlYTY4MTM2OTgxYTYxODNfNDExYjM2MjJhYTIwZjk5ZmRmYTUyYjc4NjRjYWZhZTFfSUQ6NzY0MzgyNzMxNjgxNjI4NDYxNF8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  393663
+    },
+    {
+        "file":  "周边文创_摇摇乐_06.png",
+        "originalFile":  "022.png",
+        "category":  "周边文创_摇摇乐",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YjdjNTc5OWZlOTQwOGM0MzlhOTdjNTNiZDZkYzVjNDNfYzMzOTI5ODI3Nzc0YTVlZWY1NzczNjk0YThkNWI5YTFfSUQ6NzY0MzgyNzIzNjU4MzUwOTIwOF8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  494212
+    },
+    {
+        "file":  "周边文创_摇摇乐_07.png",
+        "originalFile":  "023.png",
+        "category":  "周边文创_摇摇乐",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NmY0ZTRmMzBjNjQ4NmNhZTE0NzVkNTkwNmQ2NDdiZTJfZjFkYjIyNWM3M2JhMTkwYzdkNjRmZmJlZTlkY2NmNDhfSUQ6NzY0MzgyNzM4OTM3NzY3ODI3Ml8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  682615
+    },
+    {
+        "file":  "背景_01.png",
+        "originalFile":  "024.png",
+        "category":  "背景",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MGQ4YjIzZTZiZjFjZGUzMzgyNjcxMmQwMTZiMzhjNDNfMTNkNGRmY2NlZjQ5NTU1MTZhMjRjNjBjNmJiM2M0M2JfSUQ6NzY0Mzg0NjM3Mzc3MDgyNDkxOF8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  2106762
+    },
+    {
+        "file":  "背景_02.png",
+        "originalFile":  "025.png",
+        "category":  "背景",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=Yjk2ODk2NDhkYjQ3NjM0YWVkZjc1ZTBlMjk5M2M3NTdfZTU4Y2I0ZmVlOGQ0OGQ2YjU5ZmVhN2MxY2MzOThjMjlfSUQ6NzY0Mzg0MDQ3ODQ5MzU3NjEyNF8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  473972
+    },
+    {
+        "file":  "吉祥物等绘画元素_01.jpeg",
+        "originalFile":  "026.jpeg",
+        "category":  "吉祥物等绘画元素",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NzMxOWQzMGMxNDYyZTBlMzMxN2Q4MGNhZjQ4ZDllM2RfMjcwNWE0NDk2OGUyZWQ2NDFiMDU4NjUwNTZmMzllOGNfSUQ6NzY0NTU1Nzg3OTM3MDU4MzI2MV8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/jpeg",
+        "bytes":  238538
+    },
+    {
+        "file":  "吉祥物等绘画元素_02.jpeg",
+        "originalFile":  "027.jpeg",
+        "category":  "吉祥物等绘画元素",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZmFiMjQ1NTE5OWQzZGY1YWQxMWQ5Zjk0NGFmOTI0YzdfYjQxYjZhYzRkMWNmMWRiZDEwNGU4NjBiODlkZTk3ZjdfSUQ6NzY0NTU1Nzg4MDc5MTUzNDU0MV8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/jpeg",
+        "bytes":  198557
+    },
+    {
+        "file":  "吉祥物等绘画元素_03.jpeg",
+        "originalFile":  "028.jpeg",
+        "category":  "吉祥物等绘画元素",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=Yzk1OWFjOWIxYWQ5N2Y0NTk4MTQxYmFiZGFkMjEzN2JfMTFjYjE3MGE0OTM4ZjA5NzY5MDlkNzZjOGM1ODVkYzZfSUQ6NzY0NTU1Nzg4ODc3NzM1ODI4Nl8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/jpeg",
+        "bytes":  232094
+    },
+    {
+        "file":  "吉祥物等绘画元素_04.jpeg",
+        "originalFile":  "029.jpeg",
+        "category":  "吉祥物等绘画元素",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OGM2OTM3MjQ1NTNmNDM0NTNhNDUzZGNkYTVmZmE4ZDdfYThhYmQ2MWRhNDIxMmFiMjJkNzQ0Y2NiNzZkYTM4NWZfSUQ6NzY0NTU1Nzg4MDIxODY1MTg1OF8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/jpeg",
+        "bytes":  151372
+    },
+    {
+        "file":  "吉祥物等绘画元素_05.jpeg",
+        "originalFile":  "030.jpeg",
+        "category":  "吉祥物等绘画元素",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NTY2YTFmN2VmN2Y3ZTA4ZWYwMDQwMDhjZWI5MTk3M2NfOGFhOTQ5MDA5ZDAyYWU0YjNlN2YyNzhiZTI2ZGQ2MzVfSUQ6NzY0NTU1Nzg4OTU1NzQ2NjA2NF8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/jpeg",
+        "bytes":  82414
+    },
+    {
+        "file":  "吉祥物等绘画元素_06.png",
+        "originalFile":  "031.PNG",
+        "category":  "吉祥物等绘画元素",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTY2NDE3N2U1ZTUwMDdlY2FiOTU3MDJjMTY0Yzg2NThfYzk0ZTZkZjVhYTEyMmYxZmRkMDIxZDU2MmM3MjE5ODRfSUQ6NzY0NDg1MDU1MDEwNjI2Mjc0OF8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  864406
+    },
+    {
+        "file":  "吉祥物等绘画元素_07.png",
+        "originalFile":  "032.PNG",
+        "category":  "吉祥物等绘画元素",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZWJmNWI0OGUxMzk0NmIzNzkwNDdlODgzYjMxNTE2MzZfZDhkYjgwNTVjZDQ2YzQ4YmYzZDgzYTBkN2MzMjY4MmFfSUQ6NzY0NDg1MTQ2OTk3NjAzMDE3Ml8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  674127
+    },
+    {
+        "file":  "吉祥物等绘画元素_08.png",
+        "originalFile":  "033.PNG",
+        "category":  "吉祥物等绘画元素",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YmNhODM1MDYyYzJmODRmZTI5OTcxZDFiZjExMDFjYjlfMWUwNjgxMDI2MDQyZmE2NDE4MTNlOTFlNWVhYTdkNmRfSUQ6NzY0NDg1MTQ3MDU2MDY2MDY4MV8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  244646
+    },
+    {
+        "file":  "吉祥物等绘画元素_09.png",
+        "originalFile":  "034.PNG",
+        "category":  "吉祥物等绘画元素",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTlhMmY5Y2Y1MWZkOTBjYzlmNDYwODZiZDFiMDZkMmZfOTgzZDdiZTY3ODg5Y2FjNTIyZjliYTcxYmJlZGNmNGZfSUQ6NzY0NDg1MDAyMTM4MDI5NTg3OV8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  375438
+    },
+    {
+        "file":  "吉祥物等绘画元素_10.png",
+        "originalFile":  "035.PNG",
+        "category":  "吉祥物等绘画元素",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YjEwYjY4NTIzNGQzNmVjYjc3NzdjYjgzMjllNTYwMDNfOTQ5ZDA4OGNmMGQ1MGYwMzdmNzFkN2Q0ZThjNWZlMTlfSUQ6NzY0NDg0OTkwMzExODk0NTQ5NV8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  312983
+    },
+    {
+        "file":  "吉祥物等绘画元素_11.png",
+        "originalFile":  "036.PNG",
+        "category":  "吉祥物等绘画元素",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MzcxZDExOTQ4MjE4YzJjMWM5NzJlYjhhOTFlMmQxNGNfYTE2Y2EwYjI3NGZjMWJkY2E3YjcyZjRhOTc4NjBmZGFfSUQ6NzY0NDg0OTkwMzAwMTkxNDMyMF8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  32815
+    },
+    {
+        "file":  "吉祥物等绘画元素_12.png",
+        "originalFile":  "037.PNG",
+        "category":  "吉祥物等绘画元素",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NWJhNDBjN2YwYWMyNTE3OTAzYTI3NzNlZDY5YTQ5YmJfOTk1MWEyNGNhOTk0NzhmZDNjOWQxMTNjYTU2NDAzMjlfSUQ6NzY0NDg0OTkwMzM4NzM4MDcwOF8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  245764
+    },
+    {
+        "file":  "吉祥物等绘画元素_13.png",
+        "originalFile":  "038.png",
+        "category":  "吉祥物等绘画元素",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YzllMmQ4ZDljMTgxYmYzOGEzMTU4OWMwYWRkYjE2YTFfZDdlYzdjODFhOWE4NzhiMDY0MTdjYmE4OWIyOThlYzhfSUQ6NzY0NTM4NDkyMTMzODM4MzU0OV8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  216640
+    },
+    {
+        "file":  "吉祥物等绘画元素_14.png",
+        "originalFile":  "039.PNG",
+        "category":  "吉祥物等绘画元素",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZTk3ZjkwOWJjNzM5NWI4NjNmODQ1ODAwZTc0Y2UxNzdfOTVlMDgyNzZlODBiY2Y0ZTk0MjQyYWE1NTJlNzg2OGVfSUQ6NzY0NDg0OTkwMjQxMDA0MjU3MV8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  184213
+    },
+    {
+        "file":  "other_01.png",
+        "originalFile":  "040.png",
+        "category":  "other",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTM0MDAyMTYxMmJiNDZiOWE3ZjE4Y2IyNmU5Y2Y3MTJfODUwNjlkNDgwMjc0MTQ3MTIyZmM5MzNhYjZiZWM5ZGNfSUQ6NzY0MzgyODgyMjQ4MzYzNTE3Ml8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  1955002
+    },
+    {
+        "file":  "other_02.png",
+        "originalFile":  "041.png",
+        "category":  "other",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZWU4ZmRlMzFhZDAzN2FkM2RjMWM5YjljNDhiNzk4ZGJfZjFlNzcxZTQ4OGIxNWVmMTlkNmIxNmUyYmE2MDQ1NmVfSUQ6NzY0MzgyODg2ODkxMDMzNzIzNl8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  178848
+    },
+    {
+        "file":  "other_03.png",
+        "originalFile":  "042.png",
+        "category":  "other",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MTg2OGYxZjczYzEwYTYyMTU5ZmFhMmI0YzBmZjk4MWVfYzYyN2EzZDgxYzFjZDkzODgzMWY4MjhlYjE0MTA5OTlfSUQ6NzY0MzgyOTA1MjMxODc4MDM3Nl8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  1099109
+    },
+    {
+        "file":  "other_04.png",
+        "originalFile":  "043.png",
+        "category":  "other",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OWI0OTJiN2MwY2E5OTIxZmJlNjg5ZjM3ZDFhOWQ1MWFfNDM0NWEyM2Y2MzEzNzhjYzI1ZWU0MDgzMDFkZmQ5MGRfSUQ6NzY0MzgyOTEyNDQ2OTM5NDYyMF8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  517650
+    },
+    {
+        "file":  "other_05.png",
+        "originalFile":  "044.png",
+        "category":  "other",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NzFmMjQ2ZGE0MWE4NzA2Y2ZmZTJjNzA0NjVkNDAwNmNfNzE0YTM4MjY4NWI3YmRkODliNDIxM2Y5ZDBhZTQ1MThfSUQ6NzY0MzgyODkyNTAyNTY2ODA2MF8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  1350401
+    },
+    {
+        "file":  "other_06.png",
+        "originalFile":  "045.png",
+        "category":  "other",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YmI3MzUyOGVjMjNlZmRlODBkYWI1NWI2NjM5NjU3NmFfYTRjYjE5ZTZlNDUyYjE5M2Q5ZmRjNDNkZDQ4OTRiNzlfSUQ6NzY0NTM4NDIwNjk5MzkzNTU0Nl8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  918852
+    },
+    {
+        "file":  "other_07.png",
+        "originalFile":  "046.png",
+        "category":  "other",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NThiZGNkZGMxMTk3NmQ2MzRhNmM4YjNmNzY4Zjg2ZTNfZjllMDE3MjE2OGE5MGIxODA4YThjOTNkYmRhNjc5YjBfSUQ6NzY0MzgyOTAwMjc2Mjk0Nzc2NV8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  182989
+    },
+    {
+        "file":  "other_08.png",
+        "originalFile":  "047.png",
+        "category":  "other",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YTQ1OWVhYTc0OGY0ODAwZGRkMTk1OWYyOTVhMjZlMTFfMTVmNDI4OTlhNTgxZTRjNzQwMzA2MDMwNTU0MmRhMDdfSUQ6NzY0MzgyOTA4MDQ0NTc2NjU5Ml8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  1048214
+    },
+    {
+        "file":  "other_09.png",
+        "originalFile":  "048.png",
+        "category":  "other",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YjdlNDEzNGM3M2I0OTIwMTFhNjE1MTNjYjUwMmYxNjNfNzNlNGIwY2VmZDgxYjE4YzRhYjA0OWY3ZmU2MWM2ZDNfSUQ6NzY0MzgyNzg2OTQxMjAzNTUyN18xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  3696339
+    },
+    {
+        "file":  "学校学院iGEM_01.png",
+        "originalFile":  "049.png",
+        "category":  "学校学院iGEM",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=N2ExZTlhNDE0YmY3MDRkMmUwOTNlMDEyMmU1NzE2NWNfNDdjYzE3N2QwNjJkMDUxYzY4YjljNjUyMmE3OGE4MTVfSUQ6NzY0MzgzMDExODUxOTM0NDM0OV8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  824960
+    },
+    {
+        "file":  "学校学院iGEM_02.png",
+        "originalFile":  "050.png",
+        "category":  "学校学院iGEM",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YTk2OTAyYTVjMTI5YmU4Nzg3MzI1MDc5YjdmMzJlYWVfODJhY2FiNzdmNDNjYTA2NzZkNWYwZGRiMTM3YTAzNGVfSUQ6NzY0MzgzMDIwMzk5OTAxMzgyMF8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  1066094
+    },
+    {
+        "file":  "学校学院iGEM_03.png",
+        "originalFile":  "051.png",
+        "category":  "学校学院iGEM",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZmI5ODVkMTNkYWFmODY3OGUzZTFjZjA0MzRiZjYzMmVfMTY4YzViMGUyYjQ1NzUyOGQzZWZmNGMwMTZhNTlkYTFfSUQ6NzY0MzgzMDI4MzY5OTA2Mzc3N18xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  108936
+    },
+    {
+        "file":  "学校学院iGEM_04.png",
+        "originalFile":  "052.png",
+        "category":  "学校学院iGEM",
+        "url":  "https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZjQxYTliNmVkMDMyZWYxZTgwOTIyMTZmOWRjMzM1ODhfM2JiZTg0MzRjOTM2MGI3ODA3YzU5MTdmZDhkNDlmYWJfSUQ6NzY0MzgzMDQxMjUzOTcxMDQyNV8xNzgwNDY3MjUzOjE3ODA1NTM2NTNfVjM",
+        "contentType":  "image/png",
+        "bytes":  133287
+    }
+]

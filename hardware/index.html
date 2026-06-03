@@ -1,0 +1,52 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hardware | Auto-MC-Sensor</title>
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../liquid-glass.js" defer></script>
+</head>
+<body>
+  <nav class="topbar"><a class="brand" href="../index.html"><img class="brand-logo" src="../assets/art/LOGO%E6%B7%B1%E8%89%B2%E7%89%88_%E9%80%82%E7%94%A8%E4%BA%8E%E6%B5%85%E8%89%B2%E8%83%8C%E6%99%AF_01.png" alt="Auto-MC-Sensor logo"></a><div class="navlinks"><div class="nav-group"><a class="nav-parent " href="../index.html">Project</a><div class="nav-menu"><a class="" href="../index.html">Home</a><a class="" href="../description/index.html">Description</a><a class="" href="../results/index.html">Results</a><a class="" href="../contribution/index.html">Contribution</a></div></div><div class="nav-group"><a class="nav-parent " href="../engineering/index.html">Wet Lab</a><div class="nav-menu"><a class="" href="../engineering/index.html">Engineering</a><a class="" href="../safety/index.html">Safety</a><a class="" href="../parts/index.html">Parts</a></div></div><div class="nav-group"><a class="nav-parent " href="../model/index.html">Dry Lab</a><div class="nav-menu"><a class="" href="../model/index.html">Model</a></div></div><div class="nav-group"><a class="nav-parent active" href="../hardware/index.html">Hardware</a><div class="nav-menu"><a class="active" href="../hardware/index.html">Hardware</a></div></div><div class="nav-group"><a class="nav-parent " href="../human-practices/index.html">Human Practices</a><div class="nav-menu"><a class="" href="../human-practices/index.html">Human Practices</a><a class="" href="../art/index.html">Art</a></div></div><div class="nav-group"><a class="nav-parent " href="../team/index.html">Team</a><div class="nav-menu"><a class="" href="../team/index.html">Team</a><a class="" href="../notebook/index.html">Notebook</a><a class="" href="../attributions/index.html">Attributions</a></div></div></div></nav>
+  <main>
+<header class="page-hero"><p class="eyebrow">Hardware</p><h1>Monitoring network and response devices</h1><p>The hardware page presents the proposed system as a field-facing monitoring loop: sample, detect, upload, analyze, warn, and respond.</p></header>
+<section class="section compact"><div class="toc"><a href="#platform">Platform</a><a href="#drone">Drone</a><a href="#boat">Detection Boat</a><a href="#chamber">Detection Chamber</a><a href="#loop">Feedback Loop</a></div></section>
+<section class="section media-feature" id="platform"><img src="../assets/ppt-media/image49.png" alt="Cloud platform for monitoring and analysis"><div><p class="eyebrow">Platform</p><h2>Cloud platform for monitoring and analysis</h2><p>The source material shows a platform interface with real-time map monitoring, data analysis, system overview, and collected water-quality data. In this prototype, the platform is described as the information layer that turns sensor signals into actionable monitoring status.</p><p>A final page should add screenshots with real data, explain data fields, and describe how warning levels are calculated.</p></div></section>
+<section class="section">
+  <div class="image-row">
+    <figure class="figure"><img src="../assets/ppt-media/image50.png" alt="Real-time monitoring view"><figcaption>Map monitoring</figcaption></figure>
+    <figure class="figure"><img src="../assets/ppt-media/image51.png" alt="Data analysis view"><figcaption>Data analysis</figcaption></figure>
+    <figure class="figure"><img src="../assets/ppt-media/image52.png" alt="Collected water data view"><figcaption>Water-quality records</figcaption></figure>
+  </div>
+</section>
+<section class="section media-feature reverse" id="drone"><img src="../assets/ppt-media/image53.png" alt="Drone deployment concept"><div><p class="eyebrow">Response</p><h2>Drone deployment concept</h2><p>The supplied material proposes drone deployment after concentration warnings. It describes first-generation and second-generation drone concepts and frames deployment as a follow-up action rather than a standalone device.</p><p>Because field-release and biosafety evidence are not supplied, this generated page presents the drone as a concept requiring future validation.</p></div></section>
+<section class="section">
+  <div class="image-row">
+    <figure class="figure"><img src="../assets/ppt-media/image55.png" alt="Drone concept image"><figcaption>Drone development</figcaption></figure>
+    <figure class="figure"><img src="../assets/ppt-media/image57.png" alt="Second-generation drone material"><figcaption>Iteration</figcaption></figure>
+    <figure class="figure"><img src="../assets/ppt-media/image59.png" alt="Deployment material"><figcaption>Response concept</figcaption></figure>
+  </div>
+</section>
+<section class="section media-feature" id="boat"><img src="../assets/ppt-media/image60.png" alt="Detection boat for mobile monitoring"><div><p class="eyebrow">Device</p><h2>Detection boat for mobile monitoring</h2><p>The boat is described as an unmanned mobile platform with 4G communication and separate functional compartments for culture, detection, and waste-liquid handling.</p><p>The project material frames the boat as part of a distributed monitoring network that can reduce manual sampling load and expand coverage.</p></div></section>
+<section class="section" id="chamber">
+  <div class="section-head">
+    <p class="eyebrow">Detection chamber</p>
+    <h2>Sampling, fluorescence reading, and data upload happen inside one device story.</h2>
+    <p>The detection-chamber material describes scheduled sampling, a membrane outlet designed to prevent engineered-bacteria leakage, fluorescence ratio calculation, standard-curve conversion, cloud upload, and waste-liquid storage.</p>
+  </div>
+  <div class="grid three">
+    <article class="card"><p class="tag">Step 1</p><h3>Sampling</h3><p>Water is drawn into the detection chamber on a scheduled cycle.</p></article>
+    <article class="card"><p class="tag">Step 2</p><h3>Reading</h3><p>Fluorescence ratio is measured and converted to concentration through a standard curve.</p></article>
+    <article class="card"><p class="tag">Step 3</p><h3>Upload</h3><p>Data are sent to the cloud platform for monitoring and warning.</p></article>
+  </div>
+</section>
+<section class="section media-feature reverse" id="loop"><img src="../assets/ppt-media/image66.png" alt="Physical containment must be designed into the chamber"><div><p class="eyebrow">Containment</p><h2>Physical containment must be designed into the chamber</h2><p>The chamber concept includes waste-liquid handling and an outlet membrane. These details are important because environmental monitoring hardware must be designed around containment, not only measurement.</p><p>The final iGEM hardware page should include diagrams, CAD files, operation parameters, and test results once they are verified.</p></div></section>
+<section class="section pending"><p class="eyebrow">Content pending</p><h2>Information intentionally left blank</h2><p>These items are not available in the current verified materials.</p><ul><li>Mechanical drawings</li><li>Bill of materials</li><li>Firmware details</li><li>Cloud data schema</li><li>Field-test records</li><li>Maintenance and calibration procedure</li></ul></section>
+</main>
+  <footer>
+    <p>Auto-MC-Sensor wiki prototype. Unsupported information is marked as pending instead of being invented.</p>
+  </footer>
+</body>
+</html>
+

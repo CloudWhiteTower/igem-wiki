@@ -1,0 +1,57 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Engineering | Auto-MC-Sensor</title>
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../liquid-glass.js" defer></script>
+</head>
+<body>
+  <nav class="topbar"><a class="brand" href="../index.html"><img class="brand-logo" src="../assets/art/LOGO%E6%B7%B1%E8%89%B2%E7%89%88_%E9%80%82%E7%94%A8%E4%BA%8E%E6%B5%85%E8%89%B2%E8%83%8C%E6%99%AF_01.png" alt="Auto-MC-Sensor logo"></a><div class="navlinks"><div class="nav-group"><a class="nav-parent " href="../index.html">Project</a><div class="nav-menu"><a class="" href="../index.html">Home</a><a class="" href="../description/index.html">Description</a><a class="" href="../results/index.html">Results</a><a class="" href="../contribution/index.html">Contribution</a></div></div><div class="nav-group"><a class="nav-parent active" href="../engineering/index.html">Wet Lab</a><div class="nav-menu"><a class="active" href="../engineering/index.html">Engineering</a><a class="" href="../safety/index.html">Safety</a><a class="" href="../parts/index.html">Parts</a></div></div><div class="nav-group"><a class="nav-parent " href="../model/index.html">Dry Lab</a><div class="nav-menu"><a class="" href="../model/index.html">Model</a></div></div><div class="nav-group"><a class="nav-parent " href="../hardware/index.html">Hardware</a><div class="nav-menu"><a class="" href="../hardware/index.html">Hardware</a></div></div><div class="nav-group"><a class="nav-parent " href="../human-practices/index.html">Human Practices</a><div class="nav-menu"><a class="" href="../human-practices/index.html">Human Practices</a><a class="" href="../art/index.html">Art</a></div></div><div class="nav-group"><a class="nav-parent " href="../team/index.html">Team</a><div class="nav-menu"><a class="" href="../team/index.html">Team</a><a class="" href="../notebook/index.html">Notebook</a><a class="" href="../attributions/index.html">Attributions</a></div></div></div></nav>
+  <main>
+<header class="page-hero"><p class="eyebrow">Engineering</p><h1>Wet-lab sensor architecture</h1><p>The engineering page is organized around sensing, normalization, amplification, and biosafety, matching the structure of the supplied project material.</p></header>
+<section class="section compact"><div class="toc"><a href="#sensing">Sensing</a><a href="#start">START Riboswitch</a><a href="#validation">Validation</a><a href="#reference">Reference</a><a href="#amplification">Amplification</a><a href="#biosafety">Biosafety</a></div></section>
+<section class="section" id="sensing">
+  <div class="section-head">
+    <p class="eyebrow">Target sensing</p>
+    <h2>Multiple sensing routes are explored before the final device is fixed.</h2>
+    <p>The wet-lab material describes promoter-based sensing and a START riboswitch route. This wiki keeps them as engineering candidates until the team supplies final selection evidence.</p>
+  </div>
+  <div class="grid three">
+    <article class="card"><p class="tag">Route A</p><h3>P_mlrA promoter</h3><p>A natural inducible promoter route is described through construction of a P_mlrA-sfGFP recombinant plasmid in E. coli DH5α.</p></article>
+    <article class="card"><p class="tag">Route B</p><h3>P_mcyA/D promoter</h3><p>A second inducible promoter route is described through construction of a P_mcyA/D-sfGFP recombinant plasmid.</p></article>
+    <article class="card"><p class="tag">Route C</p><h3>RNA-based trigger</h3><p>The START system uses an aptamer-linked trigger RNA and a toehold switch to connect MC-LR recognition with sfGFP expression.</p></article>
+  </div>
+</section>
+<section class="section media-feature" id="start"><img src="../assets/ppt-media/image21.png" alt="START links molecule recognition to translation control"><div><p class="eyebrow">Design</p><h2>START links molecule recognition to translation control</h2><p>The riboswitch design is described as a synthetic trans-acting system. In the off state, the toehold switch sequesters the ribosome-binding site and start codon, suppressing reporter translation.</p><p>When the designed trigger is available, it can bind the switch and expose the translation initiation region. The project adapts this logic by placing an MC-LR aptamer core inside an apta-trigger RNA.</p></div></section>
+<section class="section">
+  <div class="grid four">
+    <article class="card"><p class="tag">Construct</p><h3>Switch plasmid</h3><p>The material names a pColADuet2-based construct carrying a toehold switch and sfGFP reporter.</p></article>
+    <article class="card"><p class="tag">Construct</p><h3>Trigger plasmid</h3><p>The trigger RNA is described under a constitutive promoter, with trigger arms and an aptamer core.</p></article>
+    <article class="card"><p class="tag">Build</p><h3>Cloning strategy</h3><p>BsaI cloning is shown in the construction workflow for the apta-trigger sequence.</p></article>
+    <article class="card"><p class="tag">Chassis</p><h3>Host context</h3><p>The material lists bacterial host strains for testing the response modules.</p></article>
+  </div>
+</section>
+<section class="section media-feature reverse" id="validation"><img src="../assets/ppt-media/image30.png" alt="Fluorescence observation is the main visible output"><div><p class="eyebrow">Testing</p><h2>Fluorescence observation is the main visible output</h2><p>Validation material includes fluorescence observation and intensity assay images. The final page should later include raw data, replicate information, normalization, and statistical treatment.</p><p>Current generated text reports only the existence of the validation workflow, not a final performance claim.</p></div></section>
+<section class="section" id="reference">
+  <div class="section-head">
+    <p class="eyebrow">Internal reference</p>
+    <h2>TurboRFP is used to normalize the green signal.</h2>
+    <p>The source material describes an internal reference module based on TurboRFP. This can reduce ambiguity when cell number, expression state, or culture conditions shift the absolute fluorescence intensity.</p>
+  </div>
+  <div class="image-row">
+    <figure class="figure"><img src="../assets/ppt-media/image31.png" alt="Growth curve evidence"><figcaption>Growth curve material</figcaption></figure>
+    <figure class="figure"><img src="../assets/ppt-media/image38.png" alt="TurboRFP internal reference material"><figcaption>Internal reference module</figcaption></figure>
+  </div>
+</section>
+<section class="section media-feature" id="amplification"><img src="../assets/ppt-media/image39.jpeg" alt="Lux circuitry is introduced as signal amplification"><div><p class="eyebrow">Amplification</p><h2>Lux circuitry is introduced as signal amplification</h2><p>The supplied material describes LuxI producing AHL, diffusion of AHL, LuxR-AHL activation of Plux, and reporter expression. It also presents a positive-feedback route through luxI.</p><p>A final wiki page should separate design rationale from measured amplification performance once complete data are available.</p></div></section>
+<section class="section media-feature reverse" id="biosafety"><img src="../assets/ppt-media/image40.png" alt="Biosafety is part of the system design"><div><p class="eyebrow">Safety</p><h2>Biosafety is part of the system design</h2><p>The biosafety material combines a YF1-FixJ light-regulated switch with a DAP auxotrophy concept. This positions containment as a design requirement, especially because the proposed hardware touches environmental monitoring.</p><p>The current page intentionally avoids claiming environmental release readiness. Field deployment would require much deeper safety validation and regulatory review.</p></div></section>
+<section class="section pending"><p class="eyebrow">Content pending</p><h2>Information intentionally left blank</h2><p>These items are not available in the current verified materials.</p><ul><li>Parts Registry IDs</li><li>Final protocols</li><li>Raw fluorescence data</li><li>Replicate counts</li><li>Statistical analysis</li><li>Complete biosafety validation</li></ul></section>
+</main>
+  <footer>
+    <p>Auto-MC-Sensor wiki prototype. Unsupported information is marked as pending instead of being invented.</p>
+  </footer>
+</body>
+</html>
+
