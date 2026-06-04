@@ -148,9 +148,14 @@
       story.style.setProperty("--story-dashboard-opacity", clamp((progress - 0.52) * 2.3, 0, 1).toFixed(4));
       story.style.setProperty("--story-alert-opacity", clamp((progress - 0.72) * 3, 0, 1).toFixed(4));
       story.style.setProperty("--story-scale", (1 + progress * 0.035).toFixed(4));
-      story.style.setProperty("--molecule-reveal", smoothstep(0.06, 0.4, progress).toFixed(4));
-      story.style.setProperty("--molecule-turn", smoothstep(0.16, 0.72, progress).toFixed(4));
-      story.style.setProperty("--molecule-depth", smoothstep(0.02, 0.5, progress).toFixed(4));
+      const moleculeEnter = smoothstep(0, 0.24, progress);
+      const moleculeExit = smoothstep(0.78, 1, progress);
+      const moleculeSlide = 38 * (1 - moleculeEnter) - 48 * moleculeExit;
+      story.style.setProperty("--molecule-reveal", "1");
+      story.style.setProperty("--molecule-scene-opacity", (1 - moleculeExit * 0.12).toFixed(4));
+      story.style.setProperty("--molecule-slide-y", `${moleculeSlide.toFixed(3)}vh`);
+      story.style.setProperty("--molecule-turn", smoothstep(0.18, 0.74, progress).toFixed(4));
+      story.style.setProperty("--molecule-depth", moleculeEnter.toFixed(4));
 
       layers.forEach((layer) => {
         const depth = Number(getComputedStyle(layer).getPropertyValue("--depth")) || 1;
@@ -329,7 +334,7 @@
     function render(progress) {
       state.progress = progress;
       fitCanvas();
-      const reveal = smoothstep(0.06, 0.4, progress);
+      const reveal = 1;
       const turn = smoothstep(0.16, 0.72, progress);
       const ctx = context;
       ctx.clearRect(0, 0, state.width, state.height);
