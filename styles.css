@@ -1446,6 +1446,7 @@ html[data-theme="light"] .topbar.liquid-glass::after{
 }
 .story-stage{
   position:sticky;
+  z-index:4;
   top:88px;
   min-height:calc(100vh - 88px);
   display:grid;
@@ -1682,9 +1683,19 @@ html[data-theme="light"] .story-visual{
 }
 .story-copy{
   position:relative;
-  z-index:2;
+  z-index:6;
   padding:clamp(24px,3vw,36px);
   align-self:center;
+}
+.molecule-copy{
+  border-radius:var(--liquid-radius);
+  background:linear-gradient(145deg, #051a22, #083d41);
+  border:1px solid rgba(103,232,216,.24);
+  box-shadow:0 28px 72px rgba(0,0,0,.34), inset 0 1px 0 rgba(255,255,255,.1);
+}
+html[data-theme="light"] .molecule-copy{
+  background:linear-gradient(145deg, #f0ffff, #dcf7f8);
+  box-shadow:0 24px 62px rgba(39,119,138,.16), inset 0 1px 0 rgba(255,255,255,.72);
 }
 .story-copy h2{
   margin:0;
@@ -1714,7 +1725,7 @@ html[data-theme="light"] .story-visual{
 }
 .story-steps{
   position:relative;
-  z-index:3;
+  z-index:1;
   display:grid;
   gap:22vh;
   padding:12vh 0 18vh;
@@ -1802,9 +1813,6 @@ html[data-theme="light"] .story-visual{
 
 /* PDB molecule reveal experiment */
 .molecule-stage{
-  --molecule-reveal:0;
-  --molecule-turn:0;
-  --molecule-depth:0;
   isolation:isolate;
   background:
     radial-gradient(circle at 50% 48%, rgba(103,232,216,.18), transparent 18%),
@@ -1858,6 +1866,7 @@ html[data-theme="light"] .molecule-stage{
   z-index:3;
   width:100%;
   height:100%;
+  cursor:grab;
   opacity:var(--molecule-reveal);
   filter:
     drop-shadow(0 0 calc(8px + var(--molecule-reveal) * 22px) rgba(103,232,216,.5))
@@ -1865,6 +1874,9 @@ html[data-theme="light"] .molecule-stage{
   transform:
     translateY(calc((1 - var(--molecule-reveal)) * 32px))
     scale(calc(.78 + var(--molecule-reveal) * .22));
+}
+.molecule-canvas.is-dragging{
+  cursor:grabbing;
 }
 .molecule-orbit{
   position:absolute;
@@ -1900,6 +1912,7 @@ html[data-theme="light"] .molecule-stage{
   -webkit-backdrop-filter:none;
   backdrop-filter:none;
   box-shadow:none;
+  opacity:.08;
 }
 .scroll-story .story-step::before{
   content:"";
@@ -1915,6 +1928,9 @@ html[data-theme="light"] .molecule-stage{
 }
 .scroll-story .story-step.is-active::before{
   opacity:1;
+}
+.scroll-story .story-step.is-active{
+  opacity:.18;
 }
 .scroll-story .story-step h3{
   font-size:22px;

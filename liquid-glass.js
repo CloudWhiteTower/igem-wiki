@@ -51,8 +51,6 @@
     ".wide",
     ".panel-img",
     ".pending",
-    ".story-visual",
-    ".story-copy",
     ".story-dashboard"
   ].join(",");
 
@@ -207,6 +205,9 @@
       width: 0,
       height: 0
     };
+    let dragging = false;
+    let lastDrag = { x: 0, y: 0 };
+    let userRotation = { yaw: 0, pitch: 0 };
 
     function parseElement(line) {
       const explicit = line.slice(76, 78).trim();
@@ -304,8 +305,8 @@
     }
 
     function project(atom, turn, reveal) {
-      const spin = turn * Math.PI * 2 + 0.35;
-      const tilt = -0.62 + reveal * 0.42;
+      const spin = turn * Math.PI * 2 + 0.35 + userRotation.yaw;
+      const tilt = -0.62 + reveal * 0.42 + userRotation.pitch;
       const cosY = Math.cos(spin);
       const sinY = Math.sin(spin);
       const cosX = Math.cos(tilt);
@@ -314,7 +315,7 @@
       const z1 = atom.x * sinY + atom.z * cosY;
       const y1 = atom.y * cosX - z1 * sinX;
       const z2 = atom.y * sinX + z1 * cosX;
-      const scale = Math.min(state.width, state.height) / 23;
+      const scale = Math.min(state.width, state.height) / 18.5;
       const perspective = 1 / (1 + (z2 + 12) / 72);
 
       return {
@@ -395,6 +396,30 @@
       });
 
     window.addEventListener("resize", () => render(state.progress), { passive: true });
+    canvas.addEventListener("pointerdown", (event) => {
+      dragging = true;
+      lastDrag = { x: event.clientX, y: event.clientY };
+      canvas.classList.add("is-dragging");
+      canvas.setPointerCapture(event.pointerId);
+    });
+    canvas.addEventListener("pointermove", (event) => {
+      if (!dragging) return;
+      const dx = event.clientX - lastDrag.x;
+      const dy = event.clientY - lastDrag.y;
+      userRotation.yaw += dx * 0.008;
+      userRotation.pitch = Math.max(-0.9, Math.min(0.9, userRotation.pitch + dy * 0.006));
+      lastDrag = { x: event.clientX, y: event.clientY };
+      render(state.progress);
+    });
+    canvas.addEventListener("pointerup", (event) => {
+      dragging = false;
+      canvas.classList.remove("is-dragging");
+      if (canvas.hasPointerCapture(event.pointerId)) canvas.releasePointerCapture(event.pointerId);
+    });
+    canvas.addEventListener("pointercancel", () => {
+      dragging = false;
+      canvas.classList.remove("is-dragging");
+    });
     return { render };
   }
 
