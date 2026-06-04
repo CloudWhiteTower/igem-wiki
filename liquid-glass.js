@@ -1,7 +1,39 @@
 (function () {
   const root = document.documentElement;
+  const savedTheme = window.localStorage ? localStorage.getItem("igem-theme") : null;
+  const initialTheme = savedTheme === "light" || savedTheme === "dark" ? savedTheme : "dark";
+  root.dataset.theme = initialTheme;
+
+  const topbar = document.querySelector(".topbar");
+  if (topbar && !topbar.querySelector(".theme-toggle")) {
+    const button = document.createElement("button");
+    button.className = "theme-toggle";
+    button.type = "button";
+    button.setAttribute("aria-label", "Switch color theme");
+    button.setAttribute("aria-pressed", String(initialTheme === "dark"));
+    button.innerHTML = '<span class="theme-toggle-icon" aria-hidden="true"></span><span class="theme-toggle-text"></span>';
+    topbar.appendChild(button);
+
+    function syncThemeButton() {
+      const isDark = root.dataset.theme !== "light";
+      button.setAttribute("aria-pressed", String(isDark));
+      button.querySelector(".theme-toggle-text").textContent = isDark ? "Dark" : "Light";
+      button.title = isDark ? "Switch to light mode" : "Switch to dark mode";
+    }
+
+    button.addEventListener("click", () => {
+      const next = root.dataset.theme === "light" ? "dark" : "light";
+      root.dataset.theme = next;
+      if (window.localStorage) localStorage.setItem("igem-theme", next);
+      syncThemeButton();
+    });
+
+    syncThemeButton();
+  }
+
   const selector = [
     ".topbar",
+    ".theme-toggle",
     ".hero-copy",
     ".page-hero",
     ".card",
