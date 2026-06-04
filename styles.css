@@ -1964,30 +1964,26 @@ html[data-theme="light"] .molecule-stage{
   border:0;
   border-radius:0;
   box-shadow:none;
-  background:
-    radial-gradient(circle at 50% 52%, rgba(103,232,216,.18), transparent 22%),
-    radial-gradient(circle at 20% 22%, rgba(255,138,164,.1), transparent 28%),
-    radial-gradient(circle at 80% 78%, rgba(247,216,117,.11), transparent 28%),
-    linear-gradient(180deg, rgba(7,30,38,.32), rgba(4,12,18,.62));
+  background:transparent;
   -webkit-backdrop-filter:none;
   backdrop-filter:none;
 }
 html[data-theme="light"] .molecule-scroll .molecule-stage{
-  background:
-    radial-gradient(circle at 50% 52%, rgba(36,174,188,.2), transparent 22%),
-    radial-gradient(circle at 20% 22%, rgba(255,138,164,.1), transparent 28%),
-    radial-gradient(circle at 80% 78%, rgba(247,216,117,.15), transparent 28%),
-    linear-gradient(180deg, rgba(226,250,251,.2), rgba(192,232,236,.42));
+  background:transparent;
 }
 .molecule-scroll .molecule-stage::before{
   inset:-12%;
-  opacity:.7;
-  filter:blur(42px);
+  opacity:.46;
+  filter:blur(54px);
+  background:
+    radial-gradient(circle at 50% 52%, rgba(103,232,216,.2), transparent 24%),
+    radial-gradient(circle at 24% 20%, rgba(255,138,164,.08), transparent 30%),
+    radial-gradient(circle at 82% 80%, rgba(247,216,117,.08), transparent 30%);
 }
 .molecule-scroll .molecule-stage::after{
   background:
-    radial-gradient(circle at 50% 52%, transparent 0 42%, rgba(0,0,0,.28) 82%),
-    linear-gradient(180deg, rgba(255,255,255,.06), transparent 36%, rgba(0,0,0,.2));
+    radial-gradient(circle at 50% 52%, transparent 0 46%, rgba(0,0,0,.08) 88%),
+    linear-gradient(180deg, rgba(255,255,255,.02), transparent 42%, rgba(0,0,0,.04));
 }
 .molecule-scroll .molecule-canvas{
   opacity:var(--molecule-scene-opacity);
