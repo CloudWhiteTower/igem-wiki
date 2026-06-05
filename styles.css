@@ -93,6 +93,7 @@ footer{padding:32px clamp(20px,5vw,80px);background:#0f2a35;color:rgba(255,255,2
   --rose:#ff8aa4;
   --mx:70vw;
   --my:24vh;
+  --page-bg-opacity:1;
 }
 body{
   position:relative;
@@ -102,6 +103,9 @@ body{
     radial-gradient(circle at 18% 10%, rgba(81,215,229,.38), transparent 32vw),
     radial-gradient(circle at 86% 18%, rgba(121,239,178,.24), transparent 30vw),
     linear-gradient(145deg,#f8ffff 0%,#edfdf8 38%,#f3f8ff 73%,#fff8fb 100%);
+}
+body:has(.hero){
+  --page-bg-opacity:0;
 }
 body::before,
 body::after{
@@ -113,6 +117,7 @@ body::after{
 }
 body::before{
   inset:0;
+  opacity:var(--page-bg-opacity);
   background:
     radial-gradient(circle at var(--mx) var(--my), rgba(255,255,255,.56), transparent 4.5rem),
     radial-gradient(circle at calc(var(--mx) - 4rem) calc(var(--my) + 3rem), rgba(81,215,229,.36), transparent 18rem),
@@ -125,7 +130,7 @@ body::before{
 }
 body::after{
   z-index:-3;
-  opacity:.72;
+  opacity:calc(.72 * var(--page-bg-opacity));
   background:
     conic-gradient(from 110deg at 50% 50%, rgba(81,215,229,.16), rgba(121,239,178,.1), rgba(255,138,164,.13), rgba(81,215,229,.16));
   filter:blur(44px) saturate(135%);
@@ -2071,5 +2076,255 @@ html[data-theme="light"] .liquid-glass::before{
 }
 html[data-theme="light"] .liquid-glass::after{
   opacity:.34;
+}
+
+/* True clear-glass pass: transparent body, light, and edge refraction */
+:root{
+  --glass-clear-fill:rgba(255,255,255,.045);
+  --glass-clear-fill-2:rgba(255,255,255,.018);
+  --glass-clear-edge:rgba(236,252,255,.36);
+  --glass-clear-edge-strong:rgba(255,255,255,.58);
+  --glass-clear-shadow:0 22px 58px rgba(0,0,0,.26);
+  --glass-clear-inner:rgba(255,255,255,.2);
+  --glass-clear-dark-edge:rgba(0,0,0,.18);
+}
+html[data-theme="light"]{
+  --glass-clear-fill:rgba(255,255,255,.16);
+  --glass-clear-fill-2:rgba(255,255,255,.055);
+  --glass-clear-edge:rgba(255,255,255,.58);
+  --glass-clear-edge-strong:rgba(255,255,255,.86);
+  --glass-clear-shadow:0 22px 54px rgba(39,119,138,.12);
+  --glass-clear-inner:rgba(255,255,255,.66);
+  --glass-clear-dark-edge:rgba(37,103,121,.08);
+}
+.liquid-glass,
+.topbar.liquid-glass,
+.card.liquid-glass,
+.stat.liquid-glass,
+.hero-copy.liquid-glass,
+.page-hero.liquid-glass,
+.figure.liquid-glass,
+.gallery figure.liquid-glass,
+.pending.liquid-glass,
+.nav-menu.liquid-glass,
+.story-step,
+.story-panel,
+.story-dashboard{
+  background:
+    linear-gradient(135deg,var(--glass-clear-fill),var(--glass-clear-fill-2) 48%,rgba(255,255,255,.07))!important;
+  border:1px solid var(--glass-clear-edge)!important;
+  box-shadow:
+    var(--glass-clear-shadow),
+    inset 0 1px 0 var(--glass-clear-edge-strong),
+    inset 1px 0 0 rgba(255,255,255,.14),
+    inset 0 -1px 0 var(--glass-clear-dark-edge)!important;
+  -webkit-backdrop-filter:blur(3px) saturate(118%) contrast(103%)!important;
+  backdrop-filter:blur(3px) saturate(118%) contrast(103%)!important;
+}
+.button.liquid-glass,
+.button.ghost.liquid-glass,
+.nav-parent.liquid-glass,
+.nav-menu a.liquid-glass,
+.toc a.liquid-glass,
+.hero-metrics span.liquid-glass,
+.theme-toggle.liquid-glass{
+  background:
+    linear-gradient(135deg,rgba(255,255,255,.12),rgba(255,255,255,.035))!important;
+  border:1px solid var(--glass-clear-edge)!important;
+  box-shadow:
+    0 10px 28px rgba(0,0,0,.16),
+    inset 0 1px 0 var(--glass-clear-edge-strong),
+    inset 0 -1px 0 var(--glass-clear-dark-edge)!important;
+  -webkit-backdrop-filter:blur(3px) saturate(118%) contrast(103%)!important;
+  backdrop-filter:blur(3px) saturate(118%) contrast(103%)!important;
+}
+html[data-theme="light"] .button.liquid-glass,
+html[data-theme="light"] .button.ghost.liquid-glass,
+html[data-theme="light"] .nav-parent.liquid-glass,
+html[data-theme="light"] .nav-menu a.liquid-glass,
+html[data-theme="light"] .toc a.liquid-glass,
+html[data-theme="light"] .hero-metrics span.liquid-glass,
+html[data-theme="light"] .theme-toggle.liquid-glass{
+  background:
+    linear-gradient(135deg,rgba(255,255,255,.28),rgba(255,255,255,.08))!important;
+}
+.topbar.liquid-glass,
+.topbar.liquid-glass.is-pressing{
+  background:
+    linear-gradient(135deg,rgba(255,255,255,.075),rgba(255,255,255,.018) 54%,rgba(255,255,255,.08))!important;
+}
+html[data-theme="light"] .topbar.liquid-glass,
+html[data-theme="light"] .topbar.liquid-glass.is-pressing{
+  background:
+    linear-gradient(135deg,rgba(255,255,255,.24),rgba(255,255,255,.07) 54%,rgba(255,255,255,.2))!important;
+}
+.media-feature img.liquid-glass,
+.wide.liquid-glass,
+.panel-img.liquid-glass,
+.art-strip img.liquid-glass,
+.image-row .figure img,
+.gallery img{
+  background:rgba(255,255,255,.035)!important;
+  border:1px solid var(--glass-clear-edge)!important;
+  box-shadow:
+    0 16px 42px rgba(0,0,0,.16),
+    inset 0 1px 0 var(--glass-clear-edge-strong)!important;
+  -webkit-backdrop-filter:blur(3px) saturate(112%) contrast(102%)!important;
+  backdrop-filter:blur(3px) saturate(112%) contrast(102%)!important;
+}
+.liquid-glass::before{
+  background:
+    radial-gradient(110px 84px at calc(var(--lgx) - 8%) calc(var(--lgy) - 12%), rgba(255,255,255,.42), rgba(255,255,255,.09) 36%, transparent 68%),
+    linear-gradient(145deg, rgba(255,255,255,.24), transparent 34% 100%)!important;
+  filter:blur(1.2px)!important;
+  opacity:.34!important;
+}
+.liquid-glass::after{
+  background:
+    radial-gradient(20px 14px at calc(var(--lgx) - 10%) calc(var(--lgy) - 16%), rgba(255,255,255,.8), transparent 72%)!important;
+  opacity:.3!important;
+  filter:none!important;
+  mix-blend-mode:screen;
+}
+.topbar.liquid-glass::before,
+.topbar.liquid-glass::after{
+  opacity:.22!important;
+}
+html[data-theme="light"] .topbar.liquid-glass::before,
+html[data-theme="light"] .topbar.liquid-glass::after{
+  opacity:.34!important;
+}
+
+/* Homepage image reveal: clear first, then blurred background with glass copy */
+.hero{
+  --hero-reveal:0;
+  --hero-copy-opacity:0;
+  --hero-copy-y:calc(100vh + 56px);
+  --hero-copy-scale:.985;
+  --hero-exit:0;
+  --hero-clear-opacity:1;
+  --hero-blur-opacity:0;
+  --hero-cue-opacity:1;
+  --hero-cue-y:0px;
+  min-height:185vh;
+  padding:0 clamp(20px,5vw,80px);
+  isolation:isolate;
+  background:transparent!important;
+  z-index:1;
+}
+.hero::before,
+.hero::after{
+  content:none!important;
+  display:none!important;
+}
+.hero-bg{
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  background-image:url("assets/hero/microcystin-hero.png");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  transform:none;
+  transition:none;
+}
+.hero-bg-clear{
+  z-index:0;
+  opacity:var(--hero-clear-opacity);
+  filter:none;
+  background-color:transparent;
+}
+.hero-bg-blur{
+  z-index:0;
+  opacity:var(--hero-blur-opacity);
+  filter:blur(16px) saturate(112%) brightness(.96);
+  transform:none;
+}
+.hero.hero-passed .hero-bg-clear,
+.hero.hero-passed .hero-bg-blur{
+  pointer-events:none;
+}
+html[data-theme="light"] .hero-bg-clear{
+  filter:none;
+}
+html[data-theme="light"] .hero-bg-blur{
+  filter:blur(16px) saturate(108%) brightness(1);
+}
+.hero .hero-copy,
+.hero .hero-copy.liquid-glass{
+  position:fixed;
+  top:0;
+  left:clamp(20px,7vw,112px);
+  right:clamp(20px,18vw,320px);
+  max-width:900px;
+  z-index:3;
+  opacity:var(--hero-copy-opacity);
+  transform:translateY(var(--hero-copy-y)) scale(var(--hero-copy-scale));
+  transform-origin:center bottom;
+  pointer-events:none;
+  transition:none;
+}
+.hero .hero-copy.liquid-glass.is-pressing{
+  transform:translateY(var(--hero-copy-y)) scale(var(--hero-copy-scale));
+}
+.hero.hero-revealed .hero-copy,
+.hero.hero-revealed .hero-copy.liquid-glass{
+  pointer-events:auto;
+}
+.hero.hero-passed .hero-copy,
+.hero.hero-passed .hero-copy.liquid-glass{
+  pointer-events:none;
+}
+.hero-scroll-cue{
+  position:absolute;
+  left:50%;
+  bottom:clamp(36px,7vh,72px);
+  z-index:4;
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  padding:14px 18px;
+  color:var(--ink);
+  font-weight:900;
+  letter-spacing:.02em;
+  opacity:var(--hero-cue-opacity);
+  transform:translateX(-50%) translateY(var(--hero-cue-y));
+  transition:none;
+}
+.hero-scroll-cue::before,
+.hero-scroll-cue::after{
+  background:none!important;
+  opacity:0!important;
+}
+.hero-scroll-cue b{
+  width:9px;
+  height:9px;
+  border-right:2px solid currentColor;
+  border-bottom:2px solid currentColor;
+  transform:rotate(45deg);
+  animation:scrollCuePulse 1.35s ease-in-out infinite;
+}
+.hero.hero-revealed .hero-scroll-cue{
+  pointer-events:none;
+}
+@keyframes scrollCuePulse{
+  0%,100%{transform:translateY(-3px) rotate(45deg);opacity:.55}
+  50%{transform:translateY(4px) rotate(45deg);opacity:1}
+}
+@media(max-width:680px){
+  .hero-scroll-cue{
+    width:calc(100% - 48px);
+    justify-content:center;
+  }
+}
+
+body:has(.hero)::before{
+  opacity:var(--page-bg-opacity)!important;
+}
+body:has(.hero)::after{
+  opacity:calc(.72 * var(--page-bg-opacity))!important;
+}
+body:has(.hero) .hero{
+  background:transparent!important;
 }
 

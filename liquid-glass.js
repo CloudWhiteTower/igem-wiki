@@ -34,7 +34,7 @@
   const selector = [
     ".topbar",
     ".theme-toggle",
-    ".hero-copy",
+    ".hero-scroll-cue",
     ".page-hero",
     ".card",
     ".stat",
@@ -59,6 +59,7 @@
 
   const panels = Array.from(document.querySelectorAll(selector));
   panels.forEach((panel) => panel.classList.add("liquid-glass"));
+  document.querySelector(".hero-copy")?.classList.add("liquid-glass", "hero-scroll-glass");
 
   let pointer = { x: window.innerWidth * 0.68, y: window.innerHeight * 0.24 };
   let scheduled = false;
@@ -172,6 +173,66 @@
     updateStory();
   }
 
+  function setupHomeHeroReveal() {
+    const hero = document.querySelector(".hero");
+    if (!hero) return;
+
+    let revealScheduled = false;
+    function clamp(value, min, max) {
+      return Math.min(max, Math.max(min, value));
+    }
+    function easeOutCubic(value) {
+      return 1 - Math.pow(1 - value, 3);
+    }
+    function setHeroVar(name, value) {
+      hero.style.setProperty(name, value);
+    }
+    function updateHeroReveal() {
+      revealScheduled = false;
+      const start = 0;
+      const range = Math.max(520, window.innerHeight * 0.68);
+      const rawProgress = clamp((window.scrollY - start) / range, 0, 1);
+      const progress = easeOutCubic(rawProgress);
+      const exitStart = range + Math.max(140, window.innerHeight * 0.16);
+      const exitRange = Math.max(520, window.innerHeight * 0.62);
+      const exitRaw = clamp((window.scrollY - exitStart) / exitRange, 0, 1);
+      const exitProgress = easeOutCubic(exitRaw);
+      const targetY = Math.max(128, window.innerHeight * 0.16);
+      const startY = window.innerHeight + 56;
+      const exitY = targetY - Math.max(360, window.innerHeight * 0.46);
+      const enteredY = startY + (targetY - startY) * progress;
+      const currentY = enteredY + (exitY - targetY) * exitProgress;
+      const visibleProgress = progress * (1 - exitProgress);
+      const imageProgress = 1 - exitProgress;
+      const blurMix = progress * 0.34;
+
+      setHeroVar("--hero-reveal", progress.toFixed(4));
+      setHeroVar("--hero-exit", exitProgress.toFixed(4));
+      document.body.style.setProperty("--page-bg-opacity", exitProgress.toFixed(4));
+      setHeroVar("--hero-copy-opacity", visibleProgress.toFixed(4));
+      setHeroVar("--hero-copy-y", `${currentY.toFixed(2)}px`);
+      setHeroVar("--hero-copy-scale", (0.985 + progress * 0.015 - exitProgress * 0.018).toFixed(4));
+      setHeroVar("--hero-clear-opacity", (imageProgress * (1 - blurMix)).toFixed(4));
+      setHeroVar("--hero-blur-opacity", (imageProgress * blurMix).toFixed(4));
+      setHeroVar("--hero-cue-opacity", Math.max(0, 1 - progress * 1.6).toFixed(4));
+      setHeroVar("--hero-cue-y", `${(progress * 24).toFixed(2)}px`);
+
+      hero.classList.toggle("hero-revealed", progress > 0.04);
+      hero.classList.toggle("hero-passed", exitProgress > 0.98);
+    }
+    function scheduleHeroReveal() {
+      if (!revealScheduled) {
+        revealScheduled = true;
+        requestAnimationFrame(updateHeroReveal);
+      }
+    }
+
+    window.addEventListener("scroll", scheduleHeroReveal, { passive: true });
+    window.addEventListener("resize", scheduleHeroReveal, { passive: true });
+    updateHeroReveal();
+  }
+
+  setupHomeHeroReveal();
   setupScrollStory();
   update();
 }());
